@@ -110,6 +110,10 @@ q {
     text-transform: uppercase;
 }
 
+.whiteRow {
+    background: var(--clr-bg);
+}
+
 .home,
 .intro {
     position: relative;
@@ -124,6 +128,7 @@ q {
     display: inline-block;
     color: var(--clr-bg);
     font-family: var(--ff-primary);
+    font-weight: bold;
     mix-blend-mode: difference;
 }
 
