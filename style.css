@@ -62,7 +62,8 @@ a {
     position: relative;
 }
 
-a:after {
+a:after,
+a:visited::after {
     content: '';
     position: absolute;
     background: var(--clr-text);
@@ -74,8 +75,7 @@ a:after {
     transition: all .2s ease;
 }
 
-a:hover:after,
-a:focus:after {
+a:hover:after {
     transform: scaleX(0);
 }
 
@@ -250,13 +250,14 @@ footer {
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: var(--padding);
+    padding: calc(var(--padding) - 1.5rem);
+    margin: calc(var(--padding) - 1rem);
     font-size: var(--fs-text);
     font-style: normal;
 }
 
 .story .paragraph .quote a::after {
-    top: 4.5rem;
+    top: 2.95rem;
     width: 50%;
 }
 
@@ -300,8 +301,12 @@ footer .linkArticle {
     font-size: calc(var(--fs-text) * 1.2);
 }
 
+footer .linkArticle a {
+    padding: 1rem;
+}
+
 footer .linkArticle a::after {
-    top: 2.2rem
+    top: 3.3rem
 }
 
 footer h4 {
