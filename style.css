@@ -110,10 +110,6 @@ q {
     text-transform: uppercase;
 }
 
-.whiteRow {
-    background: var(--clr-bg);
-}
-
 .home,
 .intro {
     position: relative;
@@ -286,6 +282,10 @@ footer {
 .dialog tbody td {
     padding-left: 2rem;
     padding-bottom: 0.5rem;
+}
+
+.dialog tbody tr:nth-child(2n - 1) {
+    background: var(--clr-bg);
 }
 
 footer {
