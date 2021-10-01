@@ -1,1 +1,3 @@
-# Welcome to Progressive Enhancement
+### Progressive Enhancement - [Github Pages][ghPages]
+
+[ghPages]: https://leweyse.github.io/progressive_enhancement/
